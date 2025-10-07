@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organizational Structure</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div class="mermaid">
+    graph TD
+      1[Babulal] --> 2[Kishore]
+      1 --> 3[Jaswant]
+      2 --> 4[Nitesh]
+      2 --> 5[Hiren]
+      3 --> 6[Pratik]
+      4 --> 7[Mithil]
+      5 --> 8[Eva]
+      5 --> 9[Romeo]
+      6 --> 10[Vivaan]
+      click 2 "Mumbai" 
+      click 4 "Mumbai"
+      click 5 "USA"
+      click 6 "Mumbai"
+      click 7 "Mumbai"
+      click 8 "USA"
+      click 9 "USA"
+      click 10 "Mumbai"
+  </div>
+
+  <script>
+    mermaid.initialize({
+      theme: 'default',
+      themeVariables: {
+        primaryColor: '#FFFFFF',
+        secondaryColor: '#EEEEEE',
+        tertiaryColor: '#1f77b4',
+        primaryTextColor: '#333',
+        secondaryTextColor: '#666'
+      },
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 },
+      class: { arrowMarkerAbsolute: true },
+      git: { arrowMarkerAbsolute: true }
+    });
+  </script>
+</body>
+</html>
